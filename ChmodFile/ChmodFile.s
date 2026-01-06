@@ -15,7 +15,6 @@ _start:
 
     svc #0x80           // Kernel call to the stored syscall
 
-    mov X0, X0          // Use 0 return code
     mov X16, #1         // Sys call 1 terminates the program
     svc #0x80           // Call the kernel to teminate the program
 
